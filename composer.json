@@ -1,0 +1,42 @@
+{
+  "name": "termyn/shared-kernel",
+  "description": "The lightweight shared kernel for Domain Driven Design project in PHP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Barnas",
+      "email": "iam@edobarnas.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Termyn\\SharedKernel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Termyn\\SharedKernel\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "doctrine/dbal": "3.4.*",
+    "doctrine/orm": "2.13.*",
+    "termyn/ddd": "dev-master",
+    "termyn/identifier": "dev-main",
+    "webmozart/assert": "1.11.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "1.9.*",
+    "phpstan/phpstan-phpunit": "1.2.*",
+    "phpunit/phpunit": "9.5.*",
+    "symplify/easy-coding-standard": "11.1.*"
+  }
+}
